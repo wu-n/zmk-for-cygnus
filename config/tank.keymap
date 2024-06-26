@@ -8,6 +8,15 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        boot_rest {
+            bindings = <&bootloader>;
+            key-positions = <59 69>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
